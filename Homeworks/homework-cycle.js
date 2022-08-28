@@ -71,3 +71,16 @@
 // }
 
 // console.log(list);
+
+
+
+// let text = 'abc abc abc abc';
+// let newText = '';
+// for (let i = 0; i < text.length; i++) {
+//   if (i === 0 || text[i - 1] === ' ') {
+//     newText += text[i].toUpperCase()
+//   } else {
+//     newText += text[i]
+//   }
+// }
+// console.log(newText);
