@@ -43,16 +43,16 @@
 // console.log(getCodeStrinfFromText(undefined));
 
 function guessTheNumber(num) {
-  const number = Number(num);
-  if (typeof number !== 'number' || isNaN(number)) return new Error('Please provide a valid number');
+  // const number = Number(num);
+  if (isNaN(num)) return new Error('Please provide a valid number');
   if (num < 0 || num > 10) return new Error('Please provide number in range 0-10');
 
   const random = Math.ceil(Math.random() * 10);
-  if (random === number) return ('You win!');
+  if (random === +num) return ('You win!');
   return `You are lose, your number is ${number}, the random number is ${random}`
 }
 
-console.log(guessTheNumber(10));
+console.log(guessTheNumber('10з'));
 // console.log(guessTheNumber(Math.random() * 10));
 
 
